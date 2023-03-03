@@ -1,12 +1,13 @@
 
 
-const qwerty = document.querySelector("#qwerty");
 
-const phrase = documentQuerySelector("#phrase");
+//const qwerty = document.querySelector("#qwerty");
 
-const btn__reset = documentQuerySelector(".btn__reset");
+//const phrase = documentQuerySelector("#phrase");
 
-const overlay = documentQuerySelector("#overlay");
+//const btn__reset = documentQuerySelector(".btn__reset");
+
+//const overlay = documentQuerySelector("#overlay");
 
 //var missed = 
 
@@ -16,13 +17,13 @@ btn__reset.addEventListener('click', () => {
 
 
 
-phrases = [
+//phrases = [
     'I Love Pizza',
     'JavaScript is Cool',
     'I Love Chocolate',
     'Timing is everything',
     'Coffee Beans'
-  ]
+  //]
 
   // return a random phrase from an array
   //const getRandomPhraseAsArray = arr => {
