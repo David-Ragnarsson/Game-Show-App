@@ -1,35 +1,36 @@
+const qwerty = document.querySelector("#qwerty");
 
+const phrase = document.querySelector("#phrase");
 
+const btn__reset = document.querySelector(".btn__reset");
 
-//const qwerty = document.querySelector("#qwerty");
+const overlay = document.querySelector("#overlay");
 
-//const phrase = documentQuerySelector("#phrase");
-
-//const btn__reset = documentQuerySelector(".btn__reset");
-
-//const overlay = documentQuerySelector("#overlay");
-
-//var missed = 
+var missed =
 
 btn__reset.addEventListener('click', () => {
     overlay.style.display = 'none';
 });
 
 
-
-//phrases = [
+const phrases = [
     'I Love Pizza',
     'JavaScript is Cool',
     'I Love Chocolate',
     'Timing is everything',
     'Coffee Beans'
-  //]
+];
+
+const getRandomPhraseAsArray = phrases[Math.floor(Math.random() * phrases.length)];
+
 
   // return a random phrase from an array
   //const getRandomPhraseAsArray = arr => {
 
-
+// xx
   //}
+  
+
 
   // adds the letters of a string to the display
   //const addPhraseToDisplay = arr => {
@@ -49,7 +50,7 @@ btn__reset.addEventListener('click', () => {
 
   //}
 
-  // listern for the start game button to be pressed
+  // listen for the start game button to be pressed
   //startButton.addEventListener('click', () =>) {
 
 
