@@ -8,6 +8,8 @@ const overlay = document.querySelector("#overlay");
 
 const scoreboard = document.querySelector("#scoreboard");
 
+let hearts = 
+
 
 
 let missed = 0;
@@ -94,7 +96,7 @@ const checkLetter = button => {
 
         if (ch[i].innerHTML === button.innerHTML){
             ch[i].classList.add("show")
-            document.getElementsById("scoreboard").src = <src="images/lostHeart.png">;
+           
 match = button.innerHTML
         }
     }
@@ -136,7 +138,12 @@ const result = checkLetter(button)
 
 if (result === null) {
 missed ++;
-
+document.querySelectorAll(.tries) = <src="images/lostHeart.png">;
+hearts[0].src = "images/lostHeart.png";
+hearts[1].src = "images/lostHeart.png";
+hearts[2].src = "images/lostHeart.png";
+hearts[3].src = "images/lostHeart.png";
+hearts[4].src = "images/lostHeart.png";
 }
 checkWin()
 });
