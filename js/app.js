@@ -94,10 +94,11 @@ match = button.innerHTML
         }
     }
    return match;
-} else if (ch[i].innerHTML !== button.innerHTML) {
-    ch[i].classList.remove("show")
-
 }
+// } else if (ch[i].innerHTML !== button.innerHTML) {
+//     ch[i].classList.remove("show")
+
+// }
 
 // let letterFound = button => {
 
