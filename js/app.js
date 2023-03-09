@@ -8,6 +8,10 @@ const overlay = document.querySelector("#overlay");
 
 const scoreboard = document.querySelector("#scoreboard");
 
+
+
+let missed = 0;
+
 // let missed =  arr => {
 
 //     let try = document.querySelector("#scoreboard") 
@@ -90,6 +94,7 @@ const checkLetter = button => {
 
         if (ch[i].innerHTML === button.innerHTML){
             ch[i].classList.add("show")
+            document.getElementsById("scoreboard").src = <src="images/lostHeart.png">;
 match = button.innerHTML
         }
     }
