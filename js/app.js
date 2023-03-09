@@ -8,7 +8,7 @@ const overlay = document.querySelector("#overlay");
 
 const scoreboard = document.querySelector("#scoreboard");
 
-let hearts = 
+let hearts = document.querySelectorAll(".tries img");
 
 
 
@@ -137,13 +137,8 @@ button.classList.add("chosen")
 const result = checkLetter(button)
 
 if (result === null) {
-missed ++;
-document.querySelectorAll(.tries) = <src="images/lostHeart.png">;
-hearts[0].src = "images/lostHeart.png";
-hearts[1].src = "images/lostHeart.png";
-hearts[2].src = "images/lostHeart.png";
-hearts[3].src = "images/lostHeart.png";
-hearts[4].src = "images/lostHeart.png";
-}
+    hearts[missed].src = "images/lostHeart.png"
+    missed++
+  }
 checkWin()
 });
