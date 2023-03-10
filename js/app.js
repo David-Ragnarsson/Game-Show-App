@@ -67,8 +67,11 @@ const phrases = [
     if (arr[i] === " "){
         ab.classList.add("space") 
 
-    } else {
+    } else if {
         ab.classList.add("letter")
+
+    } else {
+        ab.classList.add(null)
 
     }
 
