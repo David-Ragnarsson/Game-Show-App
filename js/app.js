@@ -124,11 +124,11 @@ console.log(letter, show)
 
 overlay.style.display = win;
 overlay.textContent = "You Win!";
-} //else (missed >= 5) {
-//     overlay.style.display = lose;
-//     overlay.textContent = "You Lose!";
+} else if (missed >= 5) {
+ overlay.style.display = lose;
+ overlay.textContent = "You Lose!";
 
-//    }
+ }
     
  } 
 
