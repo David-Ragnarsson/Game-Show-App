@@ -36,12 +36,12 @@ btn__reset.addEventListener('click', () => {
 
 
 const phrases = [
-    
-    'I Love Pizza',
-    'JavaScript is Cool',
-    'I Love Chocolate',
-    'Timing is everything',
-    'Coffee Beans'
+    'ab',
+    // 'i love pizza',
+    // 'javascript is cool',
+    // 'i love chocolate',
+    // 'timing is everything',
+    // 'coffee beans'
 ];
 
 
@@ -88,7 +88,7 @@ const phrases = [
   
   // check if a letter is in the phrase
 const checkLetter = button => {
-
+   
     let ch = document.querySelector('ul').children
     let match = null;
 
@@ -117,11 +117,20 @@ match = button.innerHTML
  const checkWin = () => {
    let letter = document.querySelectorAll(".letter")
    let show =  document.querySelectorAll(".show")
+   let win =  document.querySelector(".win")
+   let lose =  document.querySelector(".lose")
+   
 console.log(letter, show)
    if (letter.length === show.length){
-overlay.classList.add("win")
-overlay.style.display = 'flex';
-   }
+
+overlay.style.display = win;
+overlay.textContent = "You Win!";
+} //else (missed >= 5) {
+//     overlay.style.display = lose;
+//     overlay.textContent = "You Lose!";
+
+//    }
+    
  } 
 
   // listen for the start game button to be pressed
@@ -132,6 +141,7 @@ overlay.style.display = 'flex';
 
   // listen for the onscreen keyboard to be clicked
   qwerty.addEventListener('click', e => {
+    
 const button = e.target
 button.classList.add("chosen")
 const result = checkLetter(button)
@@ -140,5 +150,6 @@ if (result === null) {
     hearts[missed].src = "images/lostHeart.png"
     missed++
   }
+  button.disabled = true;
 checkWin()
 });
