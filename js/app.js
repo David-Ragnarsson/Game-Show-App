@@ -36,12 +36,11 @@ btn__reset.addEventListener('click', () => {
 
 
 const phrases = [
-   
-   'i love pizza',
-   'javascript is cool',
+    'i love pizza',
+    'javascript is cool',
     'i love chocolate',
-   'timing is everything',
-   'coffee beans'
+    'timing is everything',
+    'coffee beans'
 ];
 
 
