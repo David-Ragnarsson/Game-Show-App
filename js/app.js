@@ -142,9 +142,10 @@ overlay.textContent = "You Win!";
 
   // listen for the onscreen keyboard to be clicked
  qwerty.addEventListener('click', e =>  {
-    
-    if (e.target===Element.button){
-
+    e.target===Element.button;
+    console.log(Element.button);
+    if (){
+      
 const button = e.target
 
 button.classList.add("chosen")
