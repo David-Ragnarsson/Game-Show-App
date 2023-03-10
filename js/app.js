@@ -122,10 +122,10 @@ match = button.innerHTML
 console.log(letter, show)
    if (letter.length === show.length){
 
-overlay.style.display = win;
+    document.getElementById("overlay").style.display = "flex";
 overlay.textContent = "You Win!";
 } else if (missed >= 5) {
- overlay.style.display = lose;
+    document.getElementById("overlay").style.display = "flex";
  overlay.textContent = "You Lose!";
 
  }
