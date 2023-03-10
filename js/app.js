@@ -67,13 +67,10 @@ const phrases = [
     if (arr[i] === " "){
         ab.classList.add("space") 
 
-    } else if {
+    } else {
         ab.classList.add("letter")
 
-    } else {
-        ab.classList.add(null)
-
-    }
+      } 
 
 
     
@@ -144,16 +141,19 @@ overlay.textContent = "You Win!";
   //}
 
   // listen for the onscreen keyboard to be clicked
-  qwerty.addEventListener('click', e => {
+ qwerty.addEventListener('click', e =>  {
     
+    if (e.target===Element.button){
+
 const button = e.target
+
 button.classList.add("chosen")
 const result = checkLetter(button)
 
 if (result === null) {
     hearts[missed].src = "images/lostHeart.png"
     missed++
-  }
+  }}
   button.disabled = true;
 checkWin()
 });
