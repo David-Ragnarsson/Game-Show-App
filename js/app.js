@@ -142,11 +142,10 @@ overlay.textContent = "You Win!";
 
   // listen for the onscreen keyboard to be clicked
  qwerty.addEventListener('click', e =>  {
-    e.target===Element.button;
-    console.log(Element.button);
-    if (){
-      
-const button = e.target
+    const button = e.target
+   // if(e.target == ":button") {
+
+
 
 button.classList.add("chosen")
 const result = checkLetter(button)
@@ -154,7 +153,8 @@ const result = checkLetter(button)
 if (result === null) {
     hearts[missed].src = "images/lostHeart.png"
     missed++
-  }}
+  }
   button.disabled = true;
 checkWin()
+//}
 });
