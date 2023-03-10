@@ -141,9 +141,9 @@ overlay.textContent = "You Win!";
   //}
 
   // listen for the onscreen keyboard to be clicked
- qwerty.addEventListener('click', e =>  {
+ qwerty.addEventListener('click', e =>   {
     const button = e.target
-   // if(e.target == ":button") {
+    if (e.target.tagName === 'BUTTON') {
 
 
 
@@ -156,5 +156,5 @@ if (result === null) {
   }
   button.disabled = true;
 checkWin()
-//}
+}
 });
