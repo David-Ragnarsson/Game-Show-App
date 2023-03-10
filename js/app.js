@@ -123,9 +123,11 @@ console.log(letter, show)
    if (letter.length === show.length){
 
     document.getElementById("overlay").style.display = "flex";
+ overlay.className = "win";
 overlay.textContent = "You Win!";
 } else if (missed >= 5) {
     document.getElementById("overlay").style.display = "flex";
+    overlay.className = "lose";
  overlay.textContent = "You Lose!";
 
  }
